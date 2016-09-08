@@ -1,0 +1,17 @@
+---
+- name: Install VM
+  hosts:
+    - srv1
+
+
+  tasks:
+    - name: Create VM
+      hyperv_guest:
+        name: Test
+        state: present
+
+        
+    - name: Create VM
+      hyperv_guest:
+        name: Test2
+        state: present
